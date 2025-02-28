@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meine erste Webseite</title>
+    <!-- Firebase SDK einbinden -->
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-analytics.js";
+
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyBoFpFeYq_jVMJhxih0Wue8DmEM8CINKf8",
+            authDomain: "first-web-page-996a7.firebaseapp.com",
+            projectId: "first-web-page-996a7",
+            storageBucket: "first-web-page-996a7.firebasestorage.app",
+            messagingSenderId: "619947651246",
+            appId: "1:619947651246:web:f3c30c880ba5d3adaebd3f",
+            measurementId: "G-BQNSYSEE6B"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+    </script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: yellowgreen;
+        }
+        h1 {
+            color: #333;
+            padding: 20px;
+            border-radius: 5px;
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <h1>Hallo Welt, hier bin ich!</h1>
+    <h2>Hi we are here</h2>
+</body>
+</html>
